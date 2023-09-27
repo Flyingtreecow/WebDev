@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Product Selection</title>
+    <style>
+        /* Add some basic styling for better visualization */
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Selection</h1>
+
+    <!-- Product List -->
+    <div class="product" data-product-id="1">
+        <h2>Product 1</h2>
+        <p>Description: This is the first product.</p>
+        <p>Price: $10.00</p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-product-id="2">
+        <h2>Product 2</h2>
+        <p>Description: This is the second product.</p>
+        <p>Price: $15.00</p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
+    <!-- Shopping Cart -->
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+    </div>
+
+    <script>
+        // Create an array to store cart items
+        const cartItems = [];
+
+        // Function to add a product to the cart
+        function addToCart(productId) {
+            const product = document.querySelector([data-product-id="${productId}"]);
+            const productName = product.querySelector('h2').textContent;
+            const productPrice = product.querySelector('p:last-child').textContent;
+
+            // Create a new cart item object
+            const cartItem = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the item to the cart array
+            cartItems.push(cartItem);
+
+            // Update the cart display
+            displayCart();
+        }
+
+        // Function to display the cart items
+        function displayCart() {
+            const cartList = document.getElementById('cart-items');
+            cartList.innerHTML = ''; // Clear existing items
+
+            cartItems.forEach(item => {
+                const cartItem = document.createElement('li');
+                cartItem.textContent = ${item.name} - ${item.price};
+                cartList.appendChild(cartItem);
+            });
+        }
+
+     
+    </script>
+</body>
+</html>
+</body>
+</html>
