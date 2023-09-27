@@ -6,14 +6,30 @@
 <title>Trees</title>
 <link rel="icon" href="images/tree.png">
 <style>
-  h2 {text-align: center;}
-  .left {float: left; margin: 8px;}
-  .right {float: right; margin: 8px;}
+ 
 </style>
 </head>
 
 <body>
-
+<form id = "Questionaire" onsubmit="return validateForm()" style = "text-align: center"> 
+    <label for = "firstName">*First Name:</label>
+    <input type="text" name="firstName" id="firstName" maxlength="60">
+	<br> </br>
+	<label for="LastName">*Last Name:</label>
+    <input type="text" name="lastName" id="LastName" maxlength="60">
+	<br> </br>
+	<label for="EmailAddr">*Email Address:</label>
+    <input type="text" name="Email" id="EmailAddr" maxlength="60">
+    <br> </br>
+	<label for="DoB">Date of Birth:</label>
+	<input type = "Date" name = "Date of Birth" id = "DoB" maxlength = "12"> 
+	<br> </br>
+    <input type="reset" id="reset" value="Reset Form">
+    <input type="submit" id="submit" value="Submit" >
+	<br> </br>
+	<a href="index.html">Back to Home</a>
+	 
+</form> 
 </body>
 
 </html>
