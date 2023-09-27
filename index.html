@@ -6,28 +6,48 @@
     <title>Your Online Retail Store - Home</title>
     <link rel="stylesheet" href="Styles.css"> <!-- Link to your CSS file for styling -->
 </head>
-<body style = "margin:auto; ">
+<body style = "margin: auto width;text-align: center ">
     <header >
         <h1>Welcome to Your Online Retail Store</h1>
     </header>
  <ul id="nav">
-    <li><a href="RetailHomepage.html">Home</a></li>
-    <li><a href="RetailCatalog.html">Catalog</a></li>
+    <a href="index.html">Home</a>
+    <a href="RetailCatalog.html">Catalog</a>
+	<a href = "RetailForm.html" style = "width = 100%">Sign Up</a>
   
    </ul>
     <section id="featured-products">
-        <h2>Featured Products</h2>
-        <!-- Add featured product listings here -->
+        <h1>Featured Products</h1>
+        <div class="product" data-product-id="4">
+        <h2>Product 4</h2>
+		<img src="ProductImages/P4.jpg" width="100" height="100" alt="Product 4 Image" >
+        <p>Description: Another Flower </p>
+        <p>Price: $15.00</p>
+        <button onclick="addToCart(4)">Add to Cart</button>
+    </div>
     </section>
 
     <section id="special-offers">
-        <h2>Special Offers</h2>
-        <!-- Add special offer listings here -->
+        <h1>Special Offers</h1>
+        <div class="product" data-product-id="2">
+        <h2>Product 2</h2>
+		<img src="ProductImages/P2.jpeg" width="100" height="100" alt="Product 2 Image" >
+        <p>Description: Flower.</p>
+        <p>Price: $15.00</p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
     </section>
 
     <section id="new-arrivals">
-        <h2>New Arrivals</h2>
-        <!-- Add new arrival product listings here -->
+        <h1>New Arrivals</h1>
+     <div class="product" data-product-id="3">
+        <b>Product 3</b>
+		<p></p>
+		<img src="ProductImages/P3.jpg" width="100" height="100" alt="Product 3 Image" >
+        <p>Description: Another Pink linguistic Flower.</p>
+        <p>Price: $18.00</p>
+        <button onclick="addToCart(3)">Add to Cart</button>
+    </div>
     </section>
 
     <section id="newsletter">
