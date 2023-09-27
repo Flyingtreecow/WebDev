@@ -1,37 +1,6 @@
 body {
-	font-family: Fantasy, Helvetica, Verdana, sans-serif;
+	font-family: "Times New Roman", Times, serif;
 	margin: 5%;
 	font-size: 95%;
-	text-align: left;
-}
-
-header {
-	
-	margin: auto;
-	width: 80%;
-	height: auto;
-}
-#nav {
-    font-size: 15px;
-    background-color: #000000;
-}
-#nav li {
-	border-left: 1px solid #C3C3C3;
-	float: left;
-	width: 20%;
 	text-align: center;
-	box-sizing: border-box;
-	list-style-type: none;
-	background-color: #000000;
-}
-
-
-#nav a {
-	display: block;
-	color: #666;
-	text-decoration: none;
-	padding: 10px;
-}
-h2 {
-	width: 20%;
 }
